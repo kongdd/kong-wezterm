@@ -22,7 +22,7 @@ return {
 	cursor_blink_rate = 700,
 
 	adjust_window_size_when_changing_font_size = false,
-	window_decorations = "RESIZE",
+	window_decorations = "INTEGRATED_BUTTONS | RESIZE",
 	initial_cols = 90,
 	initial_rows = 24,
 	window_padding = {
