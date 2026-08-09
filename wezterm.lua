@@ -91,10 +91,26 @@ config.keys = {
 	},
 
 	-- Ctrl+Alt+方向键：创建分屏
-	{ key = "LeftArrow", mods = "CTRL|ALT", action = act.SplitPane({ direction = "Left", size = { Percent = 50 } }) },
-	{ key = "RightArrow", mods = "CTRL|ALT", action = act.SplitPane({ direction = "Right", size = { Percent = 50 } }) },
-	{ key = "UpArrow", mods = "CTRL|ALT", action = act.SplitPane({ direction = "Up", size = { Percent = 50 } }) },
-	{ key = "DownArrow", mods = "CTRL|ALT", action = act.SplitPane({ direction = "Down", size = { Percent = 50 } }) },
+	{
+		key = "LeftArrow",
+		mods = "CTRL|ALT",
+		action = act.SplitPane({ direction = "Left", size = { Percent = 50 } }),
+	},
+	{
+		key = "RightArrow",
+		mods = "CTRL|ALT",
+		action = act.SplitPane({ direction = "Right", size = { Percent = 50 } }),
+	},
+	{
+		key = "UpArrow",
+		mods = "CTRL|ALT",
+		action = act.SplitPane({ direction = "Up", size = { Percent = 50 } }),
+	},
+	{
+		key = "DownArrow",
+		mods = "CTRL|ALT",
+		action = act.SplitPane({ direction = "Down", size = { Percent = 50 } }),
+	},
 }
 
 config.mouse_bindings = {

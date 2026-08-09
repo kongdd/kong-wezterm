@@ -22,7 +22,7 @@ return {
 	cursor_blink_rate = 700,
 
 	adjust_window_size_when_changing_font_size = false,
-	window_decorations = "INTEGRATED_BUTTONS | RESIZE",
+	window_decorations = "RESIZE",
 	initial_cols = 90,
 	initial_rows = 24,
 	window_padding = {
@@ -33,8 +33,8 @@ return {
 	},
 	window_close_confirmation = "AlwaysPrompt",
 
-    window_frame = {
-        font_size = 11.0,
+	window_frame = {
+		font_size = 11.0,
 		active_titlebar_bg = "#0F2536",
 		inactive_titlebar_bg = "#0F2536",
 	},
