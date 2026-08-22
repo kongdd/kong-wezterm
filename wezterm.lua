@@ -113,8 +113,9 @@ config.keys = {
 	},
 }
 
+-- Ctrl+左键绕过 pi 的鼠标捕获，交给 WezTerm 打开 OSC 8 链接
+config.bypass_mouse_reporting_modifiers = "CTRL"
 config.mouse_bindings = {
-	-- Ctrl+左键：打开链接；兼容启用鼠标报告的终端程序
 	{
 		event = { Down = { streak = 1, button = "Left" } },
 		mods = "CTRL",
@@ -123,18 +124,6 @@ config.mouse_bindings = {
 	{
 		event = { Up = { streak = 1, button = "Left" } },
 		mods = "CTRL",
-		action = act.OpenLinkAtMouseCursor,
-	},
-	{
-		event = { Down = { streak = 1, button = "Left" } },
-		mods = "CTRL",
-		mouse_reporting = true,
-		action = act.Nop,
-	},
-	{
-		event = { Up = { streak = 1, button = "Left" } },
-		mods = "CTRL",
-		mouse_reporting = true,
 		action = act.OpenLinkAtMouseCursor,
 	},
 	-- 左键选中时 WezTerm 已自动复制；右键直接粘贴
