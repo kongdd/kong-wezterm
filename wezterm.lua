@@ -69,13 +69,6 @@ config.keys = {
 
 	-- Ctrl+V: 粘贴文本；Alt+V: 发送图片到当前 pi pane
 	{ key = "v", mods = "CTRL", action = act.PasteFrom("Clipboard") },
-	{
-		key = "v",
-		mods = "ALT",
-		action = wezterm.action_callback(function(_, pane)
-			wezterm.background_child_process({ "clipimg.exe", tostring(pane:pane_id()) })
-		end),
-	},
 
 	-- Ctrl+C: 有选区则复制，否则中断命令
 	{
